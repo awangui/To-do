@@ -1,0 +1,71 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background:  hsl(210, 36%, 96%);
+    color:hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.925rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .container{
+    width: 80vw;
+    max-width: 620px;
+    margin:0 auto;
+  }
+  .title{
+    font-size: 2.5rem;
+  }
+  .content{
+    background-color: #fff;
+    padding:3vh 0;
+  }
+  .btn{
+    height:35px;
+    background-color: hsl(205, 78%, 60%);
+    outline:none;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+  }
+  .btn:hover{
+    background-color: hsl(209, 61%, 16%);
+  }
+  input[type="text"]{
+    height:30px;
+  }
+  input[type="text"]:hover{
+   background-color: rgb(248, 246, 246);
+   border: solid 1.5px hsl(209, 61%, 16%);
+  }
+  .actions{
+    color: hsl(209, 61%, 16%);
+
+   
+  }
+  .edit{
+    padding-left: 10px;
+  }
+ .group{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    
+ }
+ .task{
+    margin-right: 20px;
+    width: 20vw;
+    max-width: 250px;
+    text-align: left;
+    padding-left: 8px;
+  
+ }
+ @media screen and (max-width:450px) {
+  .task{
+    width: 35vw;
+  }
+ }
+ 
