@@ -12,38 +12,32 @@
   
     <section class="container">
             <h1 class="title">To do List</h1>
-            <h3 class="welcome">Create your tasklist below</h3>
         <div class="content">
             <form>
-                <input type="text">
-            <button class="btn submit">Add task</button> 
-          
-    <h1 class="heading">To complete</h1>
-    <div class="group">
-        <span class="number">1.</span>
-    <p class="task">Code</p>
-    <span class="actions"><input type="checkbox"></input><i title="edit" class="fa fa-pencil-square-o edit"></i></span>
-    </div>
-    <div class="group">
-        <span class="number">2.</span>
-        <p class="task">Make bookmarks
-        </p>
-        <span class="actions"><input type="checkbox"></input><i title="edit" class="fa fa-pencil-square-o edit"></i></span>
-        </div>
-        <div class="group">
-         <span class="number">3.</span>
-         <p class="task">buy clothes</p>
-        <span class="actions"><input type="checkbox"></input><i title="edit" class="fa fa-pencil-square-o edit"></i></span>
-            </div>
-        <div class="group">
-            <span class="number">4.</span>
-            <p class="task">go to the gym</p>
-             <span class="actions"><input type="checkbox"></input><i title="edit" class="fa fa-pencil-square-o edit"></i></span>
-    </div>
+                <input type="text" id="new-task" value="">
+            <button class="btn submit" id="add">Add task</button> 
     </form>
+    <div class="tabs">
+        <div class="row">
+            <div id="pending">
+                <h1 class="heading"><a href="#"> Available</a></h1>
+                <ul id="incomplete">
+                  
+                </ul>
+
+            </div>
+            <div id="completed">
+                <h1 class="heading"><a href="#"> Completed</a></h1>
+                <ul id="complete">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
     </div>
     </section>
-    
+    <script src="app.js"></script>
    
 </body>
 </html>

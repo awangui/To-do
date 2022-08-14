@@ -5,10 +5,13 @@ body {
     line-height: 1.5;
     font-size: 0.925rem;
     text-align: center;
+    text-decoration: none;
     margin: 0;
     padding: 0;
   }
-
+a{
+  text-decoration: none;
+}
 
   .container{
     width: 80vw;
@@ -43,34 +46,15 @@ body {
   input[type="checkbox"]:hover{
    color: hsl(209, 61%, 16%);
   }
-  .actions{
-    color: hsl(209, 61%, 16%);
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:10px 0;
+  padding-top: 10px;
+}
 
-   
-  }
-  .edit{
-    padding-left: 10px;
-  }
- .group{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    
- }
- .task{
-    margin-right: 20px;
-    width: 20vw;
-    max-width: 250px;
-    text-align: left;
-    padding-left: 8px;
-  
- }
- @media screen and (max-width:720px) {
-  .task{
-    width: 35vw;
-  }
- }
- .pencil:checked + span {
-  text-decoration: line-through;
+.heading{
+  padding: 20px;
+  font-size: 1.2rem;
 }
