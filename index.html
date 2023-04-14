@@ -10,34 +10,19 @@
 </head>
 <body>
   
-    <section class="container">
-            <h1 class="title">To do List</h1>
-        <div class="content">
-            <form>
-                <input type="text" id="new-task" value="">
-            <button class="btn submit" id="add">Add task</button> 
-    </form>
-    <div class="tabs">
-        <div class="row">
-            <div id="pending">
-                <h1 class="heading"><a href="#"> Available</a></h1>
-                <ul id="incomplete">
-                  
-                </ul>
-
-            </div>
-            <div id="completed">
-                <h1 class="heading"><a href="#"> Completed</a></h1>
-                <ul id="complete">
-
-                </ul>
-            </div>
+<div class="container">
+    <h1 class="title">To do List</h1>
+    <div class="listing">
+        <form class="form-input">
+            <input type="text" id="new-task" value="">
+            <span onclick="newTask()" class="addbtn">Add</span>
+        </form>
+        <ul id="incomplete"></ul>
         </div>
-    </div>
-
-    </div>
-    </section>
-    <script src="app.js"></script>
+       
+        <ul id="complete"></ul>
+</div>
+<script src="app.js"></script>
    
 </body>
 </html>
